@@ -5,7 +5,9 @@ find_package(catkin REQUIRED
         COMPONENTS
             rosbag
             roscpp
-            tf
+            tf2
+            tf2_geometry_msgs
+            tf2_ros
             dynamic_reconfigure
             nav_msgs
         )
@@ -22,7 +24,7 @@ catkin_package(
         rosbag
         roscpp
         dynamic_reconfigure
-        tf
+        tf2_ros
   INCLUDE_DIRS include
   LIBRARIES amcl_sensors amcl_map amcl_pf
 )
